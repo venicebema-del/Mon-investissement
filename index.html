@@ -1,40 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <title>My Invest</title>
   <meta charset="UTF-8">
+  <title>My Invest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f6f8;
+      background: linear-gradient(to bottom, #e9f1f7, #f9fcff);
+      margin: 0;
       padding: 20px;
     }
-    .box {
-      background: white;
+
+    .container {
+      max-width: 480px;
       margin: auto;
-      max-width: 500px;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     }
+
     h1 {
       text-align: center;
-      color: #2c7be5;
+      color: #1d5fd1;
+      margin-bottom: 5px;
     }
-    .section {
-      margin-top: 20px;
+
+    .subtitle {
+      text-align: center;
+      color: #555;
+      font-size: 14px;
+      margin-bottom: 15px;
     }
+
+    .nav {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #1d5fd1;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background: #ddd;
+      margin: 20px 0;
+    }
+
+    .card {
+      background: #f7faff;
+      border-left: 5px solid #1d5fd1;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin: 0 0 5px;
+    }
+
+    .card.agri {
+      border-left-color: #2e9e5b;
+      background: #f3fbf6;
+    }
+
     .btn {
       display: block;
       text-align: center;
-      background: #2c7be5;
+      background: linear-gradient(to right, #1d5fd1, #2e9e5b);
       color: white;
-      padding: 12px;
-      margin-top: 20px;
+      padding: 14px;
+      border-radius: 10px;
       text-decoration: none;
-      border-radius: 8px;
+      font-weight: bold;
+      margin-top: 20px;
     }
-    .link {
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>My Invest</h1>
+    <div class="subtitle">Plateforme de démonstration</div>
+
+    <div class="nav">
+      <a href="index.html">Accueil</a> |
+      <a href="apropos.html">À propos</a>
+    </div>
+
+    <hr>
+
+    <div class="card">
+      <h3>🔐 Crypto</h3>
+      <p>
+        Participation à des activités crypto avec niveaux de risques variables
+        selon les projets présentés.
+      </p>
+    </div>
+
+    <div class="card agri">
+      <h3>🌱 Agriculture</h3>
+      <p>
+        Présentation de projets agricoles réels orientés vers le développement
+        local et durable.
+      </p>
+    </div>
+
+    <a href="https://api.whatsapp.com/send?phone=261382677720" class="btn">
+      📲 Nous contacter sur WhatsApp
+    </a>
+  </div>
+
+</body>
+</html>    .link {
       text-align: center;
       margin-top: 10px;
     }
